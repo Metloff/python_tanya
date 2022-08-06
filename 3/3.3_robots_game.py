@@ -1,5 +1,6 @@
 import random
 import os
+from telnetlib import DO
 from time import sleep
 
 class Robot:
@@ -21,8 +22,7 @@ class Robot:
     
     def move(self, x, y):
         self.y += y
-        self.x += x    
-
+        self.x += x       
 
 class Commander:
     def move(self, who):
